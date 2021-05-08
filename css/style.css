@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden !important;
 }
+html {
+  overflow-x:hidden !important;
+}
 /* Navbar Styling */
 header{
   padding:5px 0;
