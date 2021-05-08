@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- Navbar Starts here -->
+   <header id="header">
+    <div class="container">
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand p-0" href="#">Lomaia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" id="toggle-btn"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto nav-light">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="#about">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Team</a></li>
+              <li><a class="dropdown-item" href="#">Testimonials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <!-- Toggle Menu -->
+   <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+</div>
+ </header>
+  <!--Navbar Ends here  -->
+  <!-- Home Section -->
+  <section id="home" class="container">
+    <class class="row align-items-center">
+      <class class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h2>
+          We design digital products that help grow businesses
+        </h2>
+        <h6>
+          We are team of talented designers making websites with Bootstrap
+        </h6>
+        <a href="#" class="btn-get-started">Get Started</a>
+      </class>
+      <class class="col-lg-6 order-1 order-lg-2 hero-img ">
+        <img src="img/hero-img.png" class="img-fluid">
+      </class>
+    </class>
+   </section>
+  <!-- End Of home section -->
+
+  <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/about.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <h3>Learn more about us</h3>
+            <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+            </p>
+            <ul style="list-style: none;">
+              <li><i class="fad fa-badge-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="fad fa-badge-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="fad fa-badge-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</li>
+            </ul>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate tera noden carma palorp mades tera.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  <!-- End Of about section -->
+    <!-- Features Section -->
+  <section id="features" class="features" style="margin-top: 70px;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item" data-aos="fade-up">
+              <a class="nav-link active show"  id="tab-1">
+                <h4>Modi sit est</h4>
+                <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+              </a>
+            </li>
+            <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
+              <a class="nav-link"   id="tab-2">
+                <h4>Unde praesentium sed</h4>
+                <p>Voluptas vel esse repudiandae quo excepturi.</p>
+              </a>
+            </li>
+            <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="200">
+              <a class="nav-link"   id="tab-3">
+                <h4>Pariatur explicabo vel</h4>
+                <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+              </a>
+            </li>
+            <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="300">
+              <a class="nav-link"  id="tab-4">
+                <h4>Nostrum qui quasi</h4>
+                <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="img/features-1.png" alt="" class="img-fluid" id="tab1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of feautures section -->
+
+  <!-- Services section -->
+  <section id="services" class="services">
+    <div class="container"> 
+      <div class="section-title text-center">
+        <h2>Services</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="card text-center card-pink" >
+            <i class="far fa-basketball-ball"></i>
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="card text-center card-cyan">
+            <i class="fal fa-file-invoice"></i>
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="card text-center card-green" >
+            <i class="far fa-tachometer"></i>
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="card text-center card-blue" >
+            <i class="fas fa-globe-europe"></i>
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of services section -->
+  
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-cente">
+          <ul id="portfolio-filters">
+            <li class="cat-all">All</li>
+            <li class="cat-1">App</li>
+            <li class="cat-2">Card</li>
+            <li class="cat-3">Web</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row portfolio-container">
+        <div class="col portfolio-item filter-app d-flex">
+          <div class=" group-1 ">
+            <img src="img/portfolio/portfolio-1.jpg" class="img-fluid">
+          </div>
+          <div class=" group-2">
+            <img src="img/portfolio/portfolio-2.jpg" class="img-fluid">
+          </div>
+          <div class="group-3">
+            <img src="img/portfolio/portfolio-3.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="row portfolio-container mt-3">
+        <div class="col portfolio-item filter-app d-flex">
+          <div class=" group-1">
+            <img src="img/portfolio/portfolio-4.jpg" class="img-fluid">
+          </div>
+          <div class=" group-2">
+            <img src="img/portfolio/portfolio-5.jpg" class="img-fluid">
+          </div>
+          <div class="group-3">
+            <img src="img/portfolio/portfolio-6.jpg" class="img-fluid">
+          </div>
+        </div>
+    </div>
+    <div class="row portfolio-container mt-3">
+      <div class="col  portfolio-item filter-app d-flex">
+        <div class=" group-1">
+          <img src="img/portfolio/portfolio-7.jpg" class="img-fluid">
+        </div>
+        <div class=" group-2">
+          <img src="img/portfolio/portfolio-8.jpg" class="img-fluid">
+        </div>
+        <div class="group-3">
+          <img src="img/portfolio/portfolio-9.jpg" class="img-fluid">
+        </div>
+      </div>
+  </section>
+  
+  <!-- End Of portfolio section -->
+  
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing mb-5">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Pricing</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Free</h3>
+            <h4><sup>$</sup>0<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li class="na">Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box featured" data-aos="zoom-in">
+            <h3>Business</h3>
+            <h4><sup>$</sup>19<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li >Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Developer</h3>
+            <h4><sup>$</sup>29<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li >Pharetra massa</li>
+              <li >Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Ultimate</h3>
+            <h4><sup>$</sup>49<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li >Pharetra massa</li>
+              <li>Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing Ends Here -->
+
+  <!-- Contact starts here -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="row">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="far fa-map-marker-alt"></i>
+                <h3>Location:</h3>
+                <p>Rustaveli N55 , Zugdidi, Georgia.</p>
+              </div>
+              <div class="email">
+                <i class="far fa-envelope"></i>
+                <h3>Email:</h3>
+                <p>Giorgilomaia1710@gmail.com</p>
+              </div>
+              <div class="call">
+                <i class="fas fa-mobile-android-alt"></i>
+                <h3>Call:</h3>
+                <p>592-09-37-37</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+            
+          </div>
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact ends here  -->
+
+    <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="main.js">
+
+  </script>
+</body>
+</html>
