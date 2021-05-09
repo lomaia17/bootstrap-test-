@@ -5,17 +5,20 @@ $(document).ready(function(){
   $(".closebtn").click(function(){
     $('#myNav').css("width","0")
   });
+  $('.toggle').click(function(){
+    $("#myNav").css("width","0")
+  });
   var activeCat = "";
   function filterGroup(group){
     if(activeCat != group){
-      $(".portfolio-item div").filter("."+group).show();
-      $(".portfolio-item div").filter(":not(."+group+")").hide();
+      $(".portfolio-item div").filter("."+group).fadeIn();
+      $(".portfolio-item div").filter(":not(."+group+")").hide(1000);
       activeCat = group;
     }
   }
   
   $(".cat-all").click(function(){
-    $(".portfolio-item div").show();
+    $(".portfolio-item div").fadeIn();
     activeCat = "all";
   });
   $(".cat-1").click(function(){ filterGroup("group-1"); });

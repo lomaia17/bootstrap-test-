@@ -9,7 +9,7 @@ header{
   padding:5px 0;
   background: white;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   z-index: 999;
@@ -115,7 +115,7 @@ header{
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 12%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -151,6 +151,7 @@ header{
 }
 /* Home Styling */
 #home{
+  margin-top: 70px;
   width: 100%;
   background-image: url(../img/hero-bg.png);
   background-repeat: no-repeat;
@@ -377,11 +378,19 @@ header{
 .portfolio-container img{
   margin-right: 25px;
 }
-.group-1 , .group-2 {
+.group-1 , .group-2, .group-3 {
   margin-right:10px;
 }
 .group-1 {
   display: inline-block;
+}
+.filter-app img {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.filter-app img:hover{
+  opacity: 1;
+  transition: 0.5s;
 }
 /* Pricing styling */
 
@@ -391,7 +400,7 @@ header{
   border-radius: 4px;
   position: relative;
   border: 2px solid #e9ecee;
-
+  margin-top: 10px;
 }
 .pricing h3 {
   color:#777777;
